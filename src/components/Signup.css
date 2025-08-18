@@ -1,0 +1,62 @@
+/* Signup.css */
+.signup-container {
+  background: linear-gradient(135deg, #3a6186, #89253e);
+  background-size: cover;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.signup-box {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  animation: fadeInUp 0.8s ease-in-out;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+input.form-control,
+select.form-control {
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+input.form-control:focus,
+select.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

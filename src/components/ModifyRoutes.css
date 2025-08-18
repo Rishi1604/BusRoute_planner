@@ -1,0 +1,96 @@
+.modify-container {
+  height: 100vh;
+  background: linear-gradient(-45deg, #1f1c2c, #928dab, #1f1c2c, #0f0c29);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.modify-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.route-table {
+  width: 100%;
+  max-width: 1200px;
+  overflow-x: auto;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+th,
+td {
+  padding: 12px 10px;
+  text-align: center;
+}
+
+th {
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+td input,
+td textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 0.95rem;
+  resize: none;
+}
+
+td input:focus,
+td textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 0.95rem;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}

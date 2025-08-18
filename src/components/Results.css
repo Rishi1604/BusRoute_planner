@@ -1,0 +1,82 @@
+/* styles/Results.css */
+.results-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff6b6b, #20c997);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.results-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  max-width: 1100px;
+  width: 100%;
+  color: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.results-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+.results-table th,
+.results-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.results-table th {
+  background: rgba(255, 255, 255, 0.15);
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.results-table td {
+  color: #f8f8f8;
+}
+
+.results-table tr:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transition: background 0.3s ease-in-out;
+}
+
+.results-pdf {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}

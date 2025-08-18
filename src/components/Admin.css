@@ -1,0 +1,23 @@
+.admin-container {
+  background: linear-gradient(135deg, #1c1c1c, #3a3a3a);
+  animation: fadeIn 1s ease-in-out;
+  background-size: cover;
+}
+
+.admin-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #fff;
+  max-width: 600px;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

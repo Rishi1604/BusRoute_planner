@@ -1,0 +1,60 @@
+/* UserDashboard.css */
+.user-dashboard {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(-45deg, #1f1c2c, #928dab, #1f1c2c, #0f0c29);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.dashboard-content {
+  text-align: center;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.dashboard-buttons button {
+  padding: 15px 40px;
+  margin: 15px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dashboard-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}

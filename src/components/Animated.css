@@ -1,0 +1,46 @@
+/* Animated.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.full-bg {
+  background: linear-gradient(-45deg, #1b1b2f, #16213e, #0f3460, #53354a);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.glow-text {
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ff4c60, 0 0 30px #ff4c60;
+}
+
+input, select {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  border: 1px solid #ccc !important;
+}
+
+input::placeholder {
+  color: #ddd !important;
+}
+
+input:focus, select:focus {
+  border-color: #ffcc00 !important;
+  box-shadow: 0 0 5px #ffcc00 !important;
+}
